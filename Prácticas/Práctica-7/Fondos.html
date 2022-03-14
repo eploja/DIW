@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>TUTORIAL CSS3 - 2021/2022 - Diseño de Interfaces Web - CFGS DAW - IES Gran Capitán</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/prism.css">
+    <link rel="stylesheet" href="css/fondos.css">
+    <script src="js/prism.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">TUTORIAL CSS3 - 2020/2021</a></h1>
+        <h2><img src="icon/language-css3.svg"></h2>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Bordes.html">Bordes</a></li>
+            <li><a href="Fondos.html">Fondos</a></li>
+            <li><a href="Efectos_texto.html">Fuentes y Ef Texto</a></li>
+            <li><a href="Transformaciones.html">Transformac.</a></li>
+            <li><a href="Transiciones.html">Transiciones</a></li>
+            <li><a href="Animaciones.html">Animaciones</a></li>
+            <li><a href="Col_mult.html">Col Múltiples</a></li>
+            <li><a href="Color.html">Color y Degradado</a></li>
+            <li><a href="Pseudos_Css3.html">Pseudos CSS3</a></li>
+            <li><a href="Svg_filter.html">Filter y SVG</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2>TUTORIAL CSS3 - Fondos</h2>
+            <h3>Propiedades para modificar los bordes de los elementos de un documento HTML</h3>
+        </div>
+
+        <section>
+            <article>
+                <h3>background-attachment</h3>
+                <p>Propiedad que establece si una imagen de fondo se desplaza con el resto de la página, es fija o se
+                    desplaza con el texto. </p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-attachment: scroll|fixed|local|initial|inherit;</code></pre>
+                <ul>
+                    <li><strong>scroll</strong>: Valor por defecto.La imagen de fondo se desplazará con la página</li>
+                    <li><strong>fixed</strong>: La imagen de fondo no se desplazará con la página</li>
+                    <li><strong>local</strong>: La imagen de fondo se desplazará con el contenido del elemento</li>
+                </ul>
+                <h4>Ejemplo</h4>
+                <pre class="line-numbers"><code class="language-css"> background-attachment: scroll;</code></pre>
+
+                <strong>SCROLL. El fondo está fijo en relación con el elemento en sí y no se desplaza con su
+                    contenido</strong>
+                <div class="backgroundattachment">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                    pellentesque nisl a tellus sollicitudin, vitae lacinia nisi sodales. Nullam massa risus,
+                    sodales in ex sed, eleifend fringilla sapien. Maecenas id nisi et augue ullamcorper
+                    vulputate non vel nisi. Suspendisse vel mi tellus. Donec a velit pretium, vestibulum sem a,
+                    cursus nibh. Sed id elit vel eros finibus ultrices. Curabitur id purus consequat, euismod
+                    felis sit amet, eleifend velit. Nunc non nisl non ipsum iaculis varius. Integer vel nunc non
+                    ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl a tellus
+                    sollicitudin, vitae lacinia nisi sodales. Nullam massa risus, sodales in ex sed, eleifend
+                    fringilla sapien. Maecenas id nisi et augue ullamcorper vulputate non vel nisi. Suspendisse
+                    vel mi tellus. Donec a velit pretium, vestibulum sem a, cursus nibh. Sed id elit vel eros
+                    finibus ultrices. Curabitur id purus consequat, euismod felis sit amet, eleifend velit. Nunc
+                    non nisl non ipsum iaculis varius. Integer vel nunc non ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl a tellus
+                    sollicitudin, vitae lacinia nisi sodales. Nullam massa risus, sodales in ex sed, eleifend
+                    fringilla sapien. Maecenas id nisi et augue ullamcorper vulputate non vel nisi. Suspendisse
+                    vel mi tellus. Donec a velit pretium, vestibulum sem a, cursus nibh. Sed id elit vel eros
+                    finibus ultrices. Curabitur id purus consequat, euismod felis sit amet, eleifend velit. Nunc
+                    non nisl non ipsum iaculis varius. Integer vel nunc non ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl a tellus
+                    sollicitudin, vitae lacinia nisi sodales. Nullam massa risus, sodales in ex sed, eleifend
+                    fringilla sapien. Maecenas id nisi et augue ullamcorper vulputate non vel nisi. Suspendisse
+                    vel mi tellus. Donec a velit pretium, vestibulum sem a, cursus nibh. Sed id elit vel eros
+                    finibus ultrices. Curabitur id purus consequat, euismod felis sit amet, eleifend velit. Nunc
+                    non nisl non ipsum iaculis varius. Integer vel nunc non ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                </div>
+                <br />
+                <pre class="line-numbers"><code class="language-css"> background-attachment: fixed;</code></pre>
+                <strong>FIXED. El fondo está fijo en relación con la ventana gráfica. Incluso si un elemento
+                    tiene un mecanismo de desplazamiento, el fondo no se mueve con el elemento. </strong>
+                <div class="backgroundattachment2">
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                    pellentesque nisl a tellus sollicitudin, vitae lacinia nisi sodales. Nullam massa risus,
+                    sodales in ex sed, eleifend fringilla sapien. Maecenas id nisi et augue ullamcorper
+                    vulputate non vel nisi. Suspendisse vel mi tellus. Donec a velit pretium, vestibulum sem a,
+                    cursus nibh. Sed id elit vel eros finibus ultrices. Curabitur id purus consequat, euismod
+                    felis sit amet, eleifend velit. Nunc non nisl non ipsum iaculis varius. Integer vel nunc non
+                    ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl a tellus
+                    sollicitudin, vitae lacinia nisi sodales. Nullam massa risus, sodales in ex sed, eleifend
+                    fringilla sapien. Maecenas id nisi et augue ullamcorper vulputate non vel nisi. Suspendisse
+                    vel mi tellus. Donec a velit pretium, vestibulum sem a, cursus nibh. Sed id elit vel eros
+                    finibus ultrices. Curabitur id purus consequat, euismod felis sit amet, eleifend velit. Nunc
+                    non nisl non ipsum iaculis varius. Integer vel nunc non ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl a tellus
+                    sollicitudin, vitae lacinia nisi sodales. Nullam massa risus, sodales in ex sed, eleifend
+                    fringilla sapien. Maecenas id nisi et augue ullamcorper vulputate non vel nisi. Suspendisse
+                    vel mi tellus. Donec a velit pretium, vestibulum sem a, cursus nibh. Sed id elit vel eros
+                    finibus ultrices. Curabitur id purus consequat, euismod felis sit amet, eleifend velit. Nunc
+                    non nisl non ipsum iaculis varius. Integer vel nunc non ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl a tellus
+                    sollicitudin, vitae lacinia nisi sodales. Nullam massa risus, sodales in ex sed, eleifend
+                    fringilla sapien. Maecenas id nisi et augue ullamcorper vulputate non vel nisi. Suspendisse
+                    vel mi tellus. Donec a velit pretium, vestibulum sem a, cursus nibh. Sed id elit vel eros
+                    finibus ultrices. Curabitur id purus consequat, euismod felis sit amet, eleifend velit. Nunc
+                    non nisl non ipsum iaculis varius. Integer vel nunc non ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+
+                </div> <br />
+                <pre class="line-numbers"><code class="language-css"> background-attachment: local;</code></pre>
+
+                <strong>LOCAL. El fondo se fija en relación con el contenido del elemento. Si el elemento tiene
+                    un mecanismo de desplazamiento, el fondo se desplaza con el contenido del elemento</strong>
+                <div class="backgroundattachment3">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+                    pellentesque nisl a tellus sollicitudin, vitae lacinia nisi sodales. Nullam massa risus,
+                    sodales in ex sed, eleifend fringilla sapien. Maecenas id nisi et augue ullamcorper
+                    vulputate non vel nisi. Suspendisse vel mi tellus. Donec a velit pretium, vestibulum sem a,
+                    cursus nibh. Sed id elit vel eros finibus ultrices. Curabitur id purus consequat, euismod
+                    felis sit amet, eleifend velit. Nunc non nisl non ipsum iaculis varius. Integer vel nunc non
+                    ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl a tellus
+                    sollicitudin, vitae lacinia nisi sodales. Nullam massa risus, sodales in ex sed, eleifend
+                    fringilla sapien. Maecenas id nisi et augue ullamcorper vulputate non vel nisi. Suspendisse
+                    vel mi tellus. Donec a velit pretium, vestibulum sem a, cursus nibh. Sed id elit vel eros
+                    finibus ultrices. Curabitur id purus consequat, euismod felis sit amet, eleifend velit. Nunc
+                    non nisl non ipsum iaculis varius. Integer vel nunc non ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl a tellus
+                    sollicitudin, vitae lacinia nisi sodales. Nullam massa risus, sodales in ex sed, eleifend
+                    fringilla sapien. Maecenas id nisi et augue ullamcorper vulputate non vel nisi. Suspendisse
+                    vel mi tellus. Donec a velit pretium, vestibulum sem a, cursus nibh. Sed id elit vel eros
+                    finibus ultrices. Curabitur id purus consequat, euismod felis sit amet, eleifend velit. Nunc
+                    non nisl non ipsum iaculis varius. Integer vel nunc non ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pellentesque nisl a tellus
+                    sollicitudin, vitae lacinia nisi sodales. Nullam massa risus, sodales in ex sed, eleifend
+                    fringilla sapien. Maecenas id nisi et augue ullamcorper vulputate non vel nisi. Suspendisse
+                    vel mi tellus. Donec a velit pretium, vestibulum sem a, cursus nibh. Sed id elit vel eros
+                    finibus ultrices. Curabitur id purus consequat, euismod felis sit amet, eleifend velit. Nunc
+                    non nisl non ipsum iaculis varius. Integer vel nunc non ante feugiat suscipit nec non ante.
+
+                    Cras quis quam eget quam tincidunt molestie. Donec accumsan sapien nec quam tempor, vitae
+                    faucibus quam dapibus. Vivamus elementum, sapien eu ullamcorper volutpat, ex magna semper
+                    tortor, eu vulputate neque ex ut tellus. Curabitur sollicitudin sodales dolor, porta commodo
+                    ex lacinia in. Praesent lacinia ultricies massa, eu eleifend nisi lobortis ut. Pellentesque
+                    rutrum augue libero, vitae ultricies nulla commodo eu. Nulla mattis nisl ut sapien
+                    condimentum ullamcorper. Cras fringilla porttitor sem blandit dictum.
+
+                    Quisque aliquet neque facilisis porttitor scelerisque. Fusce et lorem sagittis, imperdiet
+                    velit id, elementum velit. Duis semper ultricies sem in pretium. Nulla ultricies neque
+                    ipsum, in maximus nulla accumsan mattis. Proin quam arcu, tempor et elementum sit amet,
+                    varius ut augue. Praesent et fringilla leo. Mauris ut elit nisi. Sed est mi, molestie eget
+                    mauris sit amet, tincidunt consectetur mi. Praesent sit amet erat a sem sodales convallis
+                    non in sapien. Suspendisse et porttitor leo. Quisque et velit tempus, porta ipsum ut,
+                    laoreet nisl. Nullam consectetur rhoncus magna, sit amet blandit augue fringilla eu. Duis
+                    quis pharetra magna. Quisque suscipit facilisis odio at suscipit. Donec tempor id ligula a
+                    luctus.
+
+
+                </div>
+            </article>
+
+            <article>
+                <h3>background-clip</h3>
+                <p>Propiedad que define cuánto debe extenderse el fondo (color o imagen) dentro de un elemento.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-clip: border-box|padding-box|content-box|initial|inherit;</code></pre>
+
+                <ul>
+                    <li><strong>border-box</strong>: Valor por defecto. El fondo se extiende detrás del borde</li>
+                    <li><strong>padding-box</strong>: El fondo se extiende hasta el borde interior del borde.</li>
+                    <li><strong>content-box</strong>: El fondo se extiende hasta el borde del cuadro de contenido.</li>
+
+                </ul>
+                <h4>Ejemplos</h4>
+                <pre class="line-numbers"><code class="language-css">background-clip: border-box;</code></pre>
+                <div class="backgroundclip1">
+                    <br>
+                    <br>
+
+                </div> <br>
+                <pre class="line-numbers"><code class="language-css">background-clip: padding-box;</code></pre>
+                <div class="backgroundclip2">
+                    <br>
+                    <br>
+
+                </div> <br>
+                <pre class="line-numbers"><code class="language-css">background-clip: content-box;</code></pre>
+
+
+                <div class="backgroundclip3">
+                    <br>
+                    <br>
+
+                </div>
+
+            </article>
+            <article>
+                <h3>Background-color</h3>
+                <p>
+                    La propiedad <span>background-color</span> establece el color de fondo de un elemento. El
+                    fondo de un elemento es el tamaño total del elemento, incluido el relleno
+                    y el borde (pero no el margen).
+                </p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-color: color|transparent|initial|inherit;</code></pre>
+                <p>Puede admitir estos valores: </p>
+                <ul>
+                    <li><strong>color: </strong> Especifica el color de fondo, admite muchos colores y además varias
+                        formas de aplicarle estos colores.</li>
+                    <ul>
+                        <p>Hay varias formas de aplicar color con la propiedad <strong>background-color: </strong></p>
+
+                        <li>Escribiendo un color.</li>
+                        <pre class="line-numbers"><code class="language-css">background-color: coral;</code></pre>
+                        <div class="fondos-calor"></div>
+
+                        <li>Con un valor hexadecimal.</li>
+                        <pre class="line-numbers"><code class="language-css">background-color: #92a8d1;</code></pre>
+                        <div class="fondos-hexa"></div>
+
+                        <li>Con un valor RGB.</li>
+                        <pre
+                            class="line-numbers"><code class="language-css">background-color: rgb(201, 76, 76);</code></pre>
+                        <div class="fondos-rgb"></div>
+
+                        <li>Con un valor RGBA.</li>
+                        <pre
+                            class="line-numbers"><code class="language-css">background-color: rgba(201, 76, 76, 0.3);</code></pre>
+                        <div class="fondos-rgba"></div>
+
+                        <li>Con un valor HSL.</li>
+                        <pre
+                            class="line-numbers"><code class="language-css">background-color: hsl(89, 43%, 51%);</code></pre>
+                        <div class="fondos-hsl"></div>
+
+                        <li>Con un valor HSLA.</li>
+                        <pre
+                            class="line-numbers"><code class="language-css">background-color: hsla(89, 43%, 51%, 0.3);</code></pre>
+                        <div class="fondos-hsla"></div>
+
+                    </ul>
+
+                    <li><strong>transparent: </strong>Especifica que el color de fondo debe ser transparente. </li>
+                    <pre class="line-numbers"><code class="language-css">background-color: transparent;</code></pre>
+                    <div class="fondos-transparente"></div>
+
+
+                    <li><strong>initial: </strong>Establece esta propiedad en su valor predeterminado.</li>
+                    <pre class="line-numbers"><code class="language-css">background-color: initial;</code></pre>
+
+                    <li><strong>Inherits: </strong>Hereda esta propiedad de su elemento padre.</li>
+                    <pre class="line-numbers"><code class="language-css">background-color: inherit;</code></pre>
+
+                </ul>
+
+            </article>
+            <article>
+                <h3>background-size</h3>
+                <p>Define el tamaño de la imagen de fondo.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-size: auto | length | cover | contain;</code></pre>
+                <p>Admite un solo valor, además de los globales: </p>
+                <ul>
+
+                    <li><strong>auto: </strong>Valor por defecto. La imagen de fondo se muestra en su tamaño original.
+                    </li>
+                    <pre class="line-numbers"><code class="language-css">background-size: auto;</code></pre>
+                    <div class="background-size1"></div>
+                    </br>
+
+                    <li><strong>lenght: </strong>Establece el ancho y alto de la imagen de fondo. El primer valor
+                        establece el ancho, el segundo valor establece la altura. Si solo se proporciona un valor, el
+                        segundo se establece en "auto". </li>
+                    <pre class="line-numbers"><code class="language-css">background-size: 100px 1000px;</code></pre>
+                    <div class="background-size2"></div>
+                    </br>
+
+                    <li><strong>cover: </strong>Cambia el tamaño de la imagen de fondo para cubrir todo el contenedor,
+                        incluso si tiene que estirar la imagen o cortar un poco uno de los bordes. </li>
+                    <pre class="line-numbers"><code class="language-css">background-size: cover;</code></pre>
+                    <div class="background-size4"></div>
+
+                    </br>
+                    <li><strong>contain: </strong>Cambia el tamaño de la imagen de fondo para asegurarse de que la
+                        imagen sea completamente visible </li>
+                    <pre class="line-numbers"><code class="language-css">background-size: contain;</code></pre>
+                    <div class="background-size3"></div>
+
+
+
+                </ul>
+            </article>
+            <article>
+                <h3>Background-image</h3>
+                <p>
+                    La propiedad <span>background-image</span> establece una o más imágenes de fondo para un
+                    elemento.
+                    De forma predeterminada, una imagen de fondo se coloca en la esquina superior izquierda
+                    de un elemento y se repite tanto vertical como horizontalmente.
+                </p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-image: url|none|initial|inherit;</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li> <strong> url: </strong> La URL de la imagen. Para especificar más de una imagen, separe
+                        las URL con una coma.</li>
+                    <li> <strong> none: </strong> No se mostrará ninguna imagen de fondo. </li>
+                    <li> <strong> initial: </strong> Establece esta propiedad en su valor predeterminado.</li>
+                    <li> <strong> inherit: </strong> Hereda esta propiedad de su elemento padre.</li>
+
+                </ul>
+
+                <h4>Ejemplos:</h4>
+
+                <pre
+                    class="line-numbers"><code class="language-css">background-image: url(../img/fondos-paisaje.jpg), url(../img/fondos-tree.png);</code></pre>
+                <div class="fondo"></div>
+
+                <pre class="line-numbers"><code class="language-css">height: 500px;
+background-image: url(../img/fondo-pizza.png), url(../img/fondos-png.png), url(../img/fondo-comida.png), url(../img/fondo-manzana.png), url(../img/fondo-naranja.png), url(../img/fondo-mantel.jpg);
+background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+background-position: 10% 10%, 90% 70%, 40% 20%, 20% 80%, 75% 12%;
+background-size: 150px, 150px, 150px, 90px, 100px, 100%;
+</code></pre>
+                <div class="fondo-img"></div>
+
+            </article>
+
+            <article>
+                <h3>Background-color</h3>
+                <p>
+                    La propiedad <span>background-color</span> establece el color de fondo de un elemento. El
+                    fondo de un elemento es el tamaño total del elemento, incluido el relleno
+                    y el borde (pero no el margen). Para más información sobre los
+                    degradados visite el apartado de <a href="Color.html">colores y degradados.</a>
+                </p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-color: color|transparent|initial|inherit;</code></pre>
+                <p>Puede admitir estos valores: </p>
+                <ul>
+                    <li><strong>color: </strong> Especifica el color de fondo, admite muchos colores y además
+                        varias formas de aplicarle estos colores.</li>
+                    <li> <strong> conic-gradient(): </strong> Establece un degradado cónico como imagen de
+                        fondo. Debes definir al menos dos colores.</li>
+                    <li> <strong> linear-gradient(): </strong> Establece un degradado lineal como imagen de
+                        fondo. Debes definir al menos dos colores (de arriba a abajo).</li>
+                    <li> <strong> radial-gradient(): </strong> Establece un degradado radial como imagen de
+                        fondo. Debes definir al menos dos colores (del centro a los bordes).</li>
+                    <li> <strong> repeating-conic-gradient(): </strong> Repite un gradiente cónico.</li>
+                    <li> <strong> repeating-linear-gradient(): </strong> Repite un gradiente lineal.</li>
+                    <li> <strong> repeating-radial-gradient(): </strong> Repite un degradado radial.</li>
+                    <ul>
+                        <li><strong>Auto:</strong> la imagen se muestra con el tamaño original.</li>
+                        <li><strong>Length:</strong> la imagen se muestra con el tamaño que tu introduzcas, con
+                            sus
+                            respectivas unidades en altura y anchura.</li>
+                        <li><strong>Cover:</strong> la imagen ocupa todo el fondo, sin importarle el tamaño de
+                            esta.</li>
+                        <li><strong>Contain:</strong> le cambia el tamaño a la imagen para que sea totalmente
+                            visible, con
+                            respecto al contenedor.
+                        </li>
+
+                    </ul>
+
+                    <h4>Ejemplos:</h4>
+                    <pre class="line-numbers"><code class="language-css">background-size: auto;</code></pre>
+                    <div class="background-size1">
+                    </div>
+
+                    <pre class="line-numbers"><code class="language-css">background-size: 100px 100px;</code></pre>
+                    <div class="background-size2">
+                    </div>
+
+                    <pre class="line-numbers"><code class="language-css">background-size: contain;</code></pre>
+                    <div class="background-size3">
+                    </div>
+
+                    <pre class="line-numbers"><code class="language-css">background-size: cover;</code></pre>
+                    <div class="background-size4">
+                    </div>
+
+            </article>
+
+            <article>
+                <h3>background-repeat</h3>
+                <p>Indica si la imagen se va repetir y como se va a repetir. Un fondo de imagen puede ser
+                    repetido sobre
+                    el eje horizontal, el eje vertical, ambos ejes, o no estar repetido.</p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-repeat: repeat-x | repeat-y | repeat | space | round | no-repeat;</code></pre>
+                <p>Admite un solo valor, además de los globales:</p>
+                <ul>
+                    <li><strong>Repeat-x:</strong> la imagen se repite solo horizontalmente.</li>
+                    <li><strong>Repeat-y:</strong> la imagen se repite solo verticalmente.</li>
+                    <li><strong>Repeat:</strong> la imagen se repite tanto horizontal como verticalmente, sin
+                        importarle
+                        el tamaño de esta.</li>
+                    <li><strong>Space:</strong> la imagen se repite con cierta separación entre una y otra.</li>
+                    <li><strong>Round:</strong> la imagen se repite horizontal y verticalmente encajandola en el
+                        espacio, sin huecos.</li>
+                    <li><strong>No-repeat:</strong> no se repite la imagen, por lo que solo se muestra a esta.
+                    </li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">background-image: url('../img/fondos-logoGC.jpg');
+background-size: 150px;
+background-repeat: repeat-x;</code></pre>
+                <div class="fondos-repeat">
+                </div>
+                <pre class="line-numbers"><code class="language-css">background-image: url('../img/fondos-logoGC.jpg');
+background-size: 150px;
+background-repeat: round;</code></pre>
+                <div class="fondos-repeat1">
+                </div>
+                <pre class="line-numbers"><code class="language-css">background-image: url('../img/fondos-logoGC.jpg');
+background-size: 150px;
+background-repeat: repeat-y;</code></pre>
+                <div class="fondos-repeat2">
+                </div>
+            </article>
+            <article>
+                <h3>background-position</h3>
+                <p>Define donde se va a colocar inicialmente la imagen de fondo.</p>
+                <ul>
+                    <li>valor inicial: 0% 0%</li>
+                    <li>Se aplica a: todos los elementos</li>
+                    <li>Herencia: no</li>
+                    <li>Porcentajes: se refiere al tamaño de la caja misma</li>
+                </ul>
+                </ul>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-position: % | cm | left | center | right | top | bottom | xpos ypos;</code></pre>
+                <p>Admite dos valores que se pueden combinar entre ellos, algunos son:</p>
+                <ul>
+                    <li><strong>Top, top center y center top:</strong> coloca la imagen en el punto medio del
+                        eje x.
+                    </li>
+                    <li><strong>Left, left center y center left:</strong> coloca la imagen en el punto medio del
+                        eje y.
+                    </li>
+                    <li><strong>Right, right center y center right:</strong> situa la imagen en el extremo
+                        derecho
+                        centrada.</li>
+                    <li><strong>Bottom, bottom center y center bottom:</strong> posiciona la imagen en el
+                        extremo
+                        inferior centrada.</li>
+                    <li><strong>Cm:</strong> coloca la imagen a los cm introducidos.</li>
+                    <li><strong>%:</strong> se encarga de colocar la imagen depende del porcentaje de la x e y.
+                    </li>
+                    <li><strong>xpos ypos:</strong> coloca la foto con respecto a unas coordenadas x e y.</li>
+                </ul>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">background-image: url('../img/fondos-logo.jpg');
+background-size: 150px;
+background-repeat: no-repeat;
+background-position: center;</code></pre>
+                <div class="fondos-position">
+                </div>
+
+                <pre class="line-numbers"><code class="language-css">background-image: url('../img/fondos-logo.jpg');
+background-size: 150px;
+background-repeat: no-repeat;
+background-position: 5cm;</code></pre>
+                <div class="fondos-position1">
+                </div>
+                <pre class="line-numbers"><code class="language-css">background-image: url('../img/fondos-logo.jpg');
+background-size: 150px;
+background-repeat: no-repeat;
+background-position: 75% 100%;</code></pre>
+                <div class="fondos-position2">
+                </div>
+            </article>
+
+            <article>
+                <h3>background-origin</h3>
+                <p>La propiedad background-origin especifica el área de origen de un fondo o imagen en
+                    determinada caja.
+                    para que la propiedad background-position calcule la posición de inicio de un fondo o imagen
+                    definida por la propiedad background-image.</p>
+                <li><strong>Valor inicial:</strong> padding-box.</li>
+                <li><strong>Aplica a:</strong> Todos los elementos. </li>
+                <li><strong>Heredado:</strong> No.</li>
+                <li><strong>Porcentajes</strong> n/a.</li>
+                <li><strong>Media:</strong> Visual.</li>
+                <li><strong>Valor computado:</strong> Mismo que valor especificado.</li>
+                <li><strong>Animación:</strong> No</li>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-origin: padding-box | border-box | content-box;</code></pre>
+                <p>Admite de uno a cuatro valores, que son los siguientes: </p>
+                <ul>
+                    <li><strong>padding-box:</strong> El fondo se extiende al borde exterior del padding, la
+                        posición es
+                        relativa al padding de la caja.
+
+                    </li>
+                    <li><strong>border-box:</strong> El fondo se extiende al borde exterior (por debajo del
+                        borde en el
+                        orden z), la posición es relativa al borde de la caja.</li>
+                    <li><strong>content-box</strong> El fondo se extiende dentro del (recortado al) contenido de
+                        la
+                        caja, la posición es relativa al contenido de la caja.</li>
+                </ul>
+                <p>Nota: Si la propiedad background-attachment es igual a "fixed", background-origin no tiene
+                    efecto.
+                </p>
+                <h4>Ejemplos:</h4>
+                <pre class="line-numbers"><code class="language-css">background-image: url('../img/fondos-logo.jpg');
+background-size: 150px;
+background-origin: border-box;
+background-repeat: no-repeat;</code></pre>
+                <div class="fondos-origin">
+                </div>
+                <pre class="line-numbers"><code class="language-css">background-image: url('../img/fondos-logo.jpg');
+background-size: 150px;
+background-origin: padding-box;
+background-repeat: no-repeat;</code></pre>
+                <div class="fondos-origin1">
+                </div>
+                <pre class="line-numbers"><code class="language-css">background-image: url('../img/fondos-logo.jpg');
+background-size: 150px;
+background-origin: content-box;
+background-repeat: no-repeat;
+background-position: 75% 50%;</code></pre>
+                <div class="fondos-origin2">
+                </div>
+            </article>
+
+            <article>
+                <h3>Background-blen-mode</h3>
+                <p>
+                    La propiedad <span>background-blend-mode </span> define el modo de fusión de cada capa de
+                    fondo
+                    (color y / o imagen).
+                </p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background-blend-mode: normal|multiply|screen|overlay|darken|lighten|color-dodge|saturation|color|luminosity;            </code></pre>
+                <p>Admite varios valores, que son los siguientes: </p>
+                <ul>
+                    <li><strong>Normal: </strong> Esto es el modo predeterminado. Establece el modo de fusión en
+                        normal.
+                    </li>
+                    <pre class="line-numbers"><code class="language-css">background-blend-mode: normal;</code></pre>
+                    <div class="fondosNormal"></div>
+
+                    <li><strong>Multiply: </strong> Establece el modo de fusión para multiplicar.</li>
+                    <pre class="line-numbers"><code class="language-css">background-blend-mode: Multiply;</code></pre>
+                    <div class="fondosMultiply"></div>
+
+                    <li><strong>Screen: </strong> Establece el modo de fusión en pantalla.</li>
+                    <pre class="line-numbers"><code class="language-css">background-blend-mode: Screen;</code></pre>
+                    <div class="fondosScreen"></div>
+
+                    <li><strong>Overlay: </strong> Establece el modo de fusión en superposición.</li>
+                    <pre class="line-numbers"><code class="language-css">background-blend-mode: Overlay;</code></pre>
+                    <div class="fondosOverlay"></div>
+
+                    <li><strong>Darken: </strong> Establece el modo de fusión para oscurecer.</li>
+                    <pre class="line-numbers"><code class="language-css">background-blend-mode: Darken;</code></pre>
+                    <div class="fondosDarken"></div>
+
+                    <li><strong>Lighten: </strong> Establece el modo de fusión para aclarar.</li>
+                    <pre class="line-numbers"><code class="language-css">background-blend-mode: Lighten;</code></pre>
+                    <div class="fondosLighten"></div>
+
+                    <li><strong>Color-dodge: </strong> Establece el modo de fusión para esquivar el color.</li>
+                    <pre
+                        class="line-numbers"><code class="language-css">background-blend-mode: Color-dodge;</code></pre>
+                    <div class="fondosColor-dodge"></div>
+
+                    <li><strong>Saturation: </strong> Establece el modo de fusión en saturación.</li>
+                    <pre class="line-numbers"><code class="language-css">background-blend-mode: Saturation;</code></pre>
+                    <div class="fondosSaturation"></div>
+
+                    <li><strong>Color: </strong> Establece el modo de fusión en color.</li>
+                    <pre class="line-numbers"><code class="language-css">background-blend-mode: Color;</code></pre>
+                    <div class="fondosColor"></div>
+
+                    <li><strong>Luminosity: </strong> Establece el modo de fusión en luminosidad.</li>
+                    <pre class="line-numbers"><code class="language-css">background-blend-mode: Luminosity;</code></pre>
+                    <div class="fondosLuminosity"></div>
+
+                </ul>
+
+            </article>
+            <article>
+                <h3>Background</h3>
+                <p>La propiedad background es un atajo (shorthand) para definir los valores individuales del fondo en
+                    una
+                    única
+                    regla CSS. Se puede usar background para definir los valores de una o de todas las
+                    propiedades
+                    siguientes: background-attachment, color, image, position, repeat.<br>
+                </p>
+                <h4>Sintaxis</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background: bg-color bg-image position/bg-size bg-repeat bg-origin bg-clip bg-attachment initial|inherit;</code></pre>
+                <p>La propiedad background se especifica como una o más capas de fondo, separadas por comas.</p>
+
+                La sintaxis de cada capa es la siguiente:
+
+                Cada capa puede incluir cero o una ocurrencia de cualquiera de los siguientes valores:
+                <ul>
+                    <li>attachment</li>
+                    <li>bg-image</li>
+                    <li>position</li>
+                    <li>bg-size</li>
+                    <li>repeat-style</li>
+                </ul>
+                El valor bg-size sólo puede ser incluido inmediatamente después de la position, separado con el
+                carácter '/', así: "center/80%".
+                El valor box puede ser incluido cero, una o dos veces. Si se incluye una vez, establece ambos
+                background-origin y background-clip. Si se incluye dos veces, la primera ocurrencia establece
+                background-origin, y el segundo conjunto background-clip.
+                El valor background-color sólo puede ser incluido en la última capa especificada.
+
+                </p>
+                <h4>Ejemplo 1</h4>
+                <pre
+                    class="line-numbers"><code class="language-css">background: url("../img/fondos-estrellas.jpeg") 10% 85%/350px no-repeat fixed, url("../img/fondos-sol.jpg") 90% 85%/250px no-repeat fixed;</code></pre>
+
+                <div class="background">
+                </div>
+                <h4>Ejemplo 2</h4>
+                <p>Usando background-color</p>
+                <pre class="line-numbers"><code class="language-css">background: green;</code></pre>
+
+                <div class="background1">
+                </div>
+                <h4>Ejemplo 3</h4>
+                <p>Usando bg-image y repeat-style</p>
+                <pre
+                    class="line-numbers"><code class="language-css">background: url("../img/fondos-estrellas.jpeg") repeat-y;</code></pre>
+
+                <div class="background2">
+                </div>
+                <h4>Ejemplo 4</h4>
+                <p>Usando box and background-color</p>
+                <pre class="line-numbers"><code class="language-css">background: border-box red;</code></pre>
+
+                <div class="background3">
+                </div>
+
+                <h4>Ejemplo 5</h4>
+                <p>Una sola imagen, centrada y escalada</p>
+                <pre
+                    class="line-numbers"><code class="language-css">background: no-repeat center/80% url("../img/fondos-estrellas.jpeg");</code></pre>
+
+                <div class="background4">
+                </div>
+
+
+            </article>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>Jaime Rabasco Ronda</div>
+        <a href="https://twitter.com/jaimerr" class="social"><img src="icon/twitter.svg" alt="Twitter"></a>
+        <a href="https://github.com/jaimerabasco" class="social"><img src="icon/github.svg" alt="GitHub"></a>
+    </footer>
+</body>
+
+</html>
