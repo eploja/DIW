@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+header h1{
+    font-size: 2em;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    background-color: #0c9ba0;
+    margin: 0;
+}
+
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #0c9ba0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 25px;
+}
+
+nav ul li a{
+    color: #fff;
+    display: block;
+    border: 1px solid;
+    padding: 10px 30px;
+}
+
+nav ul li:hover{
+    background-color: #0fbfc6;
+}
+
+main , aside{
+    display: inline-block;
+    vertical-align: top;
+}
+
+main {
+    min-height: 450px;
+    padding: 0 1%;
+    width: 70%; 
+    margin-left: 50px;
+}
+
+.principal main > section{
+    display: inline-block;
+    width:200px;
+    min-height:300px;
+    padding: 1% 2%;
+    margin: 20px;
+    margin-left: 55px;
+    box-shadow: 1px 1px 2px 1px rgba(128,128,128,.5);
+}
+
+.principal aside{
+    padding: 1%;
+    width: 17%;
+    margin-right: 50px;
+}
+
+.principal aside > div{
+    width: 100%;
+    height: auto;
+    padding: 1% 2%;
+    box-shadow: 1px 1px 2px 1px rgba(128,128,128,.5);
+}
+
+aside > div > div > label{
+    display: inline-block;
+    width: 33%;
+
+}
+
+
+
+aside > div > img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+aside .img{
+    margin: 30px 0;
+}
+
