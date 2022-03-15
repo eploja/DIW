@@ -7,4 +7,4 @@ table  (opcional)
 flex
 grid
 
-![Práctica 9]()
+![Práctica 9](https://github.com/JaviEpi/DIW/blob/main/Pr%C3%A1cticas/Pr%C3%A1ctica-9/img/pr9.png?raw=true)
