@@ -1,0 +1,242 @@
+/** Colores  **/
+
+:root{
+	--primary-text-color: #1B1D1D;
+	--secondary-text-color: #FFF;
+	--secondary-color:  rgba(245,246,246,0.8);
+	--color-formula1: #FF1E00;
+	--primary-color-wec: #00236F;
+	--secondary-color-wec: #5CBB0A;
+	--primary-color-dakar: #C13A1C;
+	--primary-color-renault: #FED500;
+	--secondary-color-renault: #E8E8E8;
+	--primary-color-indy:#0075C9;
+	--color-alpine: #0071C2;
+	
+	--degradado-dakar-indy: linear-gradient(to right,var(--primary-color-dakar),var(--primary-color-indy)) no-repeat;
+	--degradado-wec: linear-gradient(to right,var(--primary-color-wec),var(--secondary-color-wec)) no-repeat;
+
+	--degradado-alpine-renault-wec-f1: linear-gradient(to right,var(--color-alpine), var(--primary-color-renault),var(--primary-color-wec),var(--color-formula1)) no-repeat;
+
+}
+
+
+/*HEADER*/
+header{
+    background: url("../imagenes/Logo_Alpine.png") no-repeat 99.5%,
+    url("../imagenes/logo-renault.svg") no-repeat 94%,
+    url("../imagenes/logo_toyota_nuevo_sinnombre.svg") no-repeat 90%,
+    url("../imagenes/mclaren-1.svg") no-repeat 82%,
+    url("../imagenes/logo_Formula1.svg") no-repeat 1%,
+    url("../imagenes/Logo_wec_400x400_alpha.svg") no-repeat 6%,
+    url("../imagenes/logo_dakar_Grises_alpha.png") no-repeat 11%,
+    url("../imagenes/INDYCAR-Dark.png") no-repeat 16%,
+    var(--degradado-alpine-renault-wec-f1);
+    background-size: 70px, 100px, 150px, 150px, 70px, 70px, 40px,50px, 100%;
+}
+
+header > h1{
+    text-align:center;
+    color:var(--color-alpine);
+    margin: 0;
+}
+
+header>h2{
+    text-align:center;
+    color:var(--primary-color-wec);
+}
+
+
+/*BODY*/
+body{
+    background-image: url(../imagenes/huella_rueda.png);
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+
+nav > .material-icons:hover{
+    transition-duration: 1s;
+    transform: scale (1.5) rotate(-1080deg);
+}
+
+
+/*MAIN*/
+main{
+    display:flex;
+    justify-content: space-evenly;
+}
+
+/*PALMARES*/
+.content-palmares{
+    flex-basis: 30%;
+}
+
+.content-palmares > div:hover{
+    box-shadow: 4px 4px 4px 4px rgba(128,128,128,.5);
+    transition: all 1s ease;
+}
+
+.f1{
+    padding: 10px;
+}
+
+.wec{
+    padding: 10px;
+}
+
+.dakar{
+    padding: 10px;
+}
+
+.content-palmares > div > div:hover{
+    box-shadow: 4px 4px 4px 4px rgba(128,128,128,.5);
+    transition: 2s;
+}
+
+.content-palmares > div > .f1:hover span{
+    color: var(--color-formula1) ;
+}
+
+.content-palmares > div > .wec:hover b{
+    color: var(--primary-color-wec) ;
+    
+}
+
+.content-palmares > div > .wec:hover span{
+    color: var(--secondary-color-wec) ;
+}
+
+.content-palmares > div > .dakar:hover b{
+    color: var(--primary-color-dakar) ;
+}
+
+.content-palmares > div > .dakar:hover span{
+    color: var(--primary-color-indy) ;
+}
+
+.title-f1{
+    background-color: var(--color-formula1);
+    color: #fff;
+}
+
+.title-wec{
+    background: var(--degradado-wec);
+    color: #fff;
+}
+
+.title-dakar{
+    background: var(--degradado-dakar-indy);
+    color: #fff;
+}
+
+.content-palmares > div{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.content-palmares h2{
+    text-align: center;
+}
+
+.content-palmares h3{
+    text-align: center;
+}
+
+.content-palmares img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*ALONSO*/
+.content-alonso{
+    flex-basis: 60%;
+}
+.content-alonso h2{
+    color: var(--color-alpine)
+}
+.content-alonso h2{
+    text-align: center;
+}
+
+.content-alonso h3{
+    text-align: center;
+}
+.content-alonso > .content-alonso-plan{
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid var(--color-alpine);
+}
+
+.content-alonso > .content-alonso-plan:hover{
+    box-shadow: 1px 2px 2px 2px var(--color-alpine);
+    transition: 1s;
+}
+
+.content-alonso img{
+    width: 100%;
+    height: auto;
+}
+
+.content-modalidades{
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-modalidades div{
+    background: #fff;
+    padding: 10px;
+    margin: 10px 0px 100px 0px;
+}
+
+
+.content-modalidades-1{
+    flex-basis: 45%;
+    border: 1px solid var(--color-formula1);
+}
+
+.content-modalidades-1:hover{
+    box-shadow: 1px 2px 2px 2px var(--color-formula1);
+    transition: 1s;
+}
+
+.content-modalidades-2{
+    flex-basis: 45%;
+    border: 1px solid var(--primary-color-wec);
+}
+
+.content-modalidades-2:hover{
+    box-shadow: 1px 2px 2px 2px var(--primary-color-wec);
+    transition: 1s;
+}
+
+.material-icons{
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+
+
